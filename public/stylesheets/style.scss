@@ -1,7 +1,12 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: rgb(32, 32, 32);
+$font-stack: Georgia, 'Times New Roman', Times, serif;;
+$primary-color:  darkslategray;
 $item-group-margin: 5px;
 $item-group-padding: 10px;
+
+body{
+  font: 100% $font-stack;
+  color: $primary-color;
+}
 
 form.signup,
 form.login {
@@ -48,3 +53,11 @@ form.login {
   background: rgb(247, 247, 209);
 }
 
+.button .delete .btn .float-right .btn-outline-danger {
+ margin-right: 20px;
+}
+
+#cart-summary {
+  margin-top:20px;
+  margin-bottom:20px;
+}

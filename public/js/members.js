@@ -1,7 +1,7 @@
 $(document).ready(function () {
   //Getting a reference to the input field where user adds a new item to cart
   var $itemContainer = $("#user-cart");
-  
+
   //arrary of items
   var itemName = [
     "Australia Beef Steak",
@@ -42,18 +42,18 @@ $(document).ready(function () {
     $(document).on("click", itemBtnID[i], callback(itemName[i]));
   }
   $(document).on("click", "button.delete", deleteItem);
- function callback(name) {
-   return function(e){
-     e.preventDefault();
-     var feed = {
-      text: name,
-      complete: false,
+  function callback(name) {
+    return function (e) {
+      e.preventDefault();
+      var feed = {
+        text: name,
+        complete: false,
+      };
+      console.log(feed);
+      $.post("/api/feeds", feed, getFeeds);
     };
-    console.log(feed);
-    $.post("/api/feeds", feed, getFeeds);
-   }
- }
-  
+  }
+
   //inital array for cart list
   var feeds = [];
   //getting items from database
@@ -80,8 +80,8 @@ $(document).ready(function () {
     event.stopPropagation();
     var id = $(this).data("id");
     $.ajax({
-      method:"DELETE",
-      url:"/api/feeds/" + id
+      method: "DELETE",
+      url: "/api/feeds/" + id,
     }).then(getFeeds);
   }
   //function that constructs a new item row
@@ -89,15 +89,15 @@ $(document).ready(function () {
     var $newItemRow = $(
       [
         "<li class='list-group-item feed-item'>",
+        "<button class='delete btn btn-outline-primary' style='margin-right: 10px;'>x</button>",
         "<span>",
         feed.text,
         "</span>",
-        "<button class='delete btn btn-danger'>x</button>",
+
         "</li>",
       ].join("")
     );
     $newItemRow.find("button.delete").data("id", feed.id);
     return $newItemRow;
   }
-
 });

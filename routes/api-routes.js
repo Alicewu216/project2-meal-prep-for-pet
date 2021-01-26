@@ -47,12 +47,35 @@ module.exports = function(app) {
     }
   });
 
+  app.get("/api/addresses",function(req,res) {
+    db.Address.fincAll({}).then(function(dbAddress){
+      console.log(dbAddress);
+      res.json(dbAddress);
+    });
+  });
+
+  app.post("/api/addresses",function(req,res){
+    db.Address.create({
+      username: req.body.username,
+      address_1: req.body.address_1,
+      address_2: req.body.address_2,
+      city_name: req.body.city_name,
+      zipcode: req.body.zipcode,
+      phone_number:req.body.phone_number
+    }).then(function(dbAddress) {
+      res.json(dbAddress);
+  }).catch(function(err) {
+          res.json(err);
+      });
+  });
+
   app.get("/api/feeds",function(req,res){
     db.Feed.findAll({}).then(function(dbFeed) {
         console.log(dbFeed);
         res.json(dbFeed);
     });
  });
+
  app.post("/api/feeds",function(req,res) {
 
      db.Feed.create({
@@ -65,6 +88,7 @@ module.exports = function(app) {
              res.json(err);
          });
  });
+
  app.delete("/api/feeds/:id",function(req,res) {
      db.Feed.destroy({
          where: {
@@ -74,6 +98,7 @@ module.exports = function(app) {
          res.json(dbFeed);
      });
  });
+
  app.put("/api/feeds",function(req,res) {
      console.log(req.body);
      db.Feed.update({
@@ -87,4 +112,4 @@ module.exports = function(app) {
      });
  });
   
-};
+}

@@ -1,3 +1,8 @@
+body {
+  font: 100% Georgia, "Times New Roman", Times, serif;
+  color: darkslategray;
+}
+
 form.signup,
 form.login {
   margin-top: 50px;
@@ -40,5 +45,14 @@ form.login {
 
 #other-supplements {
   background: #f7f7d1;
+}
+
+.button .delete .btn .float-right .btn-outline-danger {
+  margin-right: 20px;
+}
+
+#cart-summary {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
