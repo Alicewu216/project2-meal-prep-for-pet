@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Passport Authentication</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<link href="stylesheets/style.css" rel="stylesheet">
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/logout">
+          Logout
+        </a>
+        <a class="navbar-brand" href="/checkout">
+          View my Cart
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container container-fluid" id="title-text">
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+        <h2>Welcome <span class="member-name"></span></h2>
+        <h2>You Can Now View Our Products Here!</span></h2>
+        <p>Treat your pets like family, feed them like family. Various studies has show that animal stays in their
+          best
+          health state when fed raw. By feedng them with their most authentic diet, you can help your pets eliminate
+          chance of getting diseases as well as staying in their optinal shape! </p>
+        <h4>Customize your pet raw diet below by clicking on the types of meat, vegetable and supplemnet you want!
+        </h4>
+      </div>
+    </div><div class="contianer container-fluid" id="title-container"></div>
+  </div>
+  <br>
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="row item-group-container" id="land-red-meat">
+          <h3>Land animals</h3>
+          <div class="col-md-4">
+            Australia Beef Steak
+            <img class="item-images"
+              src="https://previews.123rf.com/images/topntp/topntp1907/topntp190704628/127802337-fresh-raw-beef-steak-or-raw-meat.jpg">
+            <button class="btn complete btn-danger" id="complete-1">Add to Cart</button>
+          </div>
+          <div class="col-md-4">
+            Organic Lamb
+            <img class="item-images"
+              src="https://previews.123rf.com/images/wowpho/wowpho1507/wowpho150700006/42077078-raw-lamb-cutlets-with-rosemary-on-chopping-board.jpg">
+            <button class="btn complete btn-danger" id="complete-2">Add to Cart</button>
+          </div>
+          <div class="col-md-4">
+            Organic Venison
+            <img class="item-images"
+              src="https://previews.123rf.com/images/andreyst/andreyst1503/andreyst150302710/37684608-raw-wild-venison-meat.jpg">
+            <button class="btn complete btn-danger" id="complete-3">Add to Cart</button>
+          </div>
+        </div>
+        <br>
+        <div class="row item-group-container" id="land-white-meat"> 
+          <h3>Land animals with white meat</h3>
+          <div class="col-md-4">
+            Grass fed Duck
+            <img class="item-images"
+              src="https://previews.123rf.com/images/margouillat/margouillat1704/margouillat170400398/76434939-raw-duck-meat.jpg">
+            <button class="btn complete btn-danger" id="complete-4">Add to Cart</button>
+          </div>
+          <div class="col-md-4">
+            Grass fed Chicken
+            <img class="item-images"
+              src="https://previews.123rf.com/images/magone/magone1011/magone101100013/8171589-raw-chicken-meat.jpg">
+            <button class="btn complete btn-danger" id="complete-5">Add to Cart</button>
+          </div>
+          <div class="col-md-4">
+            Quail
+            <img class="item-images"
+              src="https://img.freepik.com/free-photo/three-fresh-raw-organic-quails-gray_130716-1178.jpg?size=626&ext=jpg">
+            <button class="btn complete btn-danger" id="complete-6">Add to Cart</button>
+          </div>
+        </div>
+        <br>
+        <div class="row item-group-container" id="fish-meat">
+          <h3>Fish animals</h3>
+          <div class="col-md-4">
+            Tuna
+            <img class="item-images"
+              src="https://previews.123rf.com/images/patrykkosmider/patrykkosmider1610/patrykkosmider161000108/64891396-raw-tuna-steak-on-wooden-cutboard.jpg">
+            <button class="btn complete btn-danger" id="complete-7">Add to Cart</button>
+          </div>
+          <div class="col-md-4">
+            Salmon
+            <img class="item-images" src="https://d39l2hkdp2esp1.cloudfront.net/img/photo/181358/181358_00_2x.jpg">
+            <button class="btn complete btn-danger" id="complete-8">Add to Cart</button>
+          </div>
+          <div class="col-md-4">
+            Shrimp
+            <img class="item-images"
+              src="https://previews.123rf.com/images/topntp/topntp1806/topntp180600026/102426936-fresh-shrimps-or-prawns-raw-on-wooden-board-with-ingredients.jpg">
+            <button class="btn complete btn-danger" id="complete-9">Add to Cart</button>
+          </div>
+        </div>
+        <br>
+        <div class="row item-group-container" id="other-supplements">
+          <h3>Other Yummy supplements</h3>
+          <div class="col-md-4">
+            Organic Egg
+            <img class="item-images"
+              src="https://image.freepik.com/free-photo/raw-egg-yolk-spoon-eggshells_233227-52.jpg">
+            <button class="btn complete btn-danger" id="complete-10">Add to Cart</button>
+          </div>
+          <div class="col-md-4">
+            Fish Oil
+            <img class="item-images"
+              src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/03/Omega-3-capsules-1200x628.jpg">
+            <button class="btn complete btn-danger" id="complete-11">Add to Cart</button>
+          </div>
+          <div class="col-md-4">
+            Super vitamin for pet
+            <img class="item-images"
+              src="https://rightasrain.uwmedicine.org/sites/chew/files/styles/large/public/images/2019/vitamins.jpg?h=a61a7e7e&itok=I1Ujenr5">
+            <button class="btn complete btn-danger" id="complete-12">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-4" id="user-cart">
+       <h3>These are what you've added to your cart:</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+
+</body>
+
+</html>

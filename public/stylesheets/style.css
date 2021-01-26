@@ -1,0 +1,44 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+.item-images {
+  width: 181px;
+  height: 130px;
+  padding-bottom: 10px;
+}
+
+#title-container {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/59fa71444c0dbfb08e66d1f2/1510873996474-PVOM3SVF56SL9FNBSBBN/ke17ZwdGBToddI8pDm48kGEl8aIHxjr0VrIyrNkVoLMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcBVR_Kbb6xPVpPZAnn8ccoaFIuJ-s9vjNYmpDONdoN0UuntLEhQlB1lXQb8AYU71t/banner.jpg?format=2500w");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  padding-top: 260px;
+}
+
+#title-text {
+  background: whitesmoke;
+}
+
+.item-group-container {
+  margin: 5px;
+  padding: 10px;
+}
+
+.item-group-container #land-red-meat {
+  background: #f3c3cb;
+}
+
+.item-group-container #land-white-meat {
+  background: #c9e6c9;
+}
+
+.item-group-container #fish-meat {
+  background: lightsteelblue;
+}
+
+.item-group-container #other-supplements {
+  background: #f7f7d1;
+}
+/*# sourceMappingURL=style.css.map */
