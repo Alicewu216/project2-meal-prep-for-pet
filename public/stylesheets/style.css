@@ -26,19 +26,19 @@ form.login {
   padding: 10px;
 }
 
-.item-group-container #land-red-meat {
+#land-red-meat {
   background: #f3c3cb;
 }
 
-.item-group-container #land-white-meat {
+#land-white-meat {
   background: #c9e6c9;
 }
 
-.item-group-container #fish-meat {
+#fish-meat {
   background: lightsteelblue;
 }
 
-.item-group-container #other-supplements {
+#other-supplements {
   background: #f7f7d1;
 }
 /*# sourceMappingURL=style.css.map */

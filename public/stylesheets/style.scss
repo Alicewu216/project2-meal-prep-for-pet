@@ -28,19 +28,21 @@ form.login {
 .item-group-container {
   margin: $item-group-margin;
   padding: $item-group-padding;
-  #land-red-meat {
-    background: rgb(243, 195, 203);
-  }
+  
+}
 
-  #land-white-meat {
-    background: rgb(201, 230, 201);
-  }
+#land-red-meat {
+  background: rgb(243, 195, 203);
+}
 
-  #fish-meat {
-    background: lightsteelblue;
-  }
+#land-white-meat {
+  background: rgb(201, 230, 201);
+}
 
-  #other-supplements {
-    background: rgb(247, 247, 209);
-  }
+#fish-meat {
+  background: lightsteelblue;
+}
+
+#other-supplements {
+  background: rgb(247, 247, 209);
 }

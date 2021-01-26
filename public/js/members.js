@@ -40,6 +40,7 @@ $(document).ready(function () {
   for (var i = 0; i < itemBtnID.length; i++) {
     $(document).on("click", itemBtnID[i], callback(itemName[i]));
   }
+  $(document).on("click", "button.delete", deleteItem);
  function callback(name) {
    return function(e){
      e.preventDefault();
@@ -73,6 +74,14 @@ $(document).ready(function () {
       console.log(feeds);
       initializeCart();
     });
+  }
+  function deleteItem(event) {
+    event.stopPropagation();
+    var id = $(this).data("id");
+    $.ajax({
+      method:"DELETE",
+      url:"/api/feeds/" + id
+    }).then(getFeeds);
   }
   //function that constructs a new item row
   function creatNewCartRow(feed) {
