@@ -5,42 +5,40 @@
   <title>Passport Authentication</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">  <link href="stylesheets/style.css" rel="stylesheet">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
+<link href="stylesheets/style.css" rel="stylesheet">
 
 <body>
   <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
-      <a class="navbar-brand" href="/members">
-        Home
-      </a>
-    </div>
-  </div>
-</nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
-        <h3>Here's a summary of your tailored raw-feed meal for your pet!</h3>
-        <P>Please make sure to review your cart carefully before you check out. Click on the delete button to removed unwanted item(s) or click on the home button on top to go back to home page and add more items to your delicious raw-feed meal plan</p>
-        <div id="cart-summary"></div>
-        <div>
-          <h3>Click on check out button below to submit your order and get an estimated delivery price at checkout!</h3>
-          <button class="btn btn-danger" id="check-out-to-estimate">
-            check Out Now!
-          </button>
-        </div>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/logout">
+          Logout
+        </a>
+        <a class="navbar-brand" href="/viewcart">
+          View my Cart
+        </a>
       </div>
     </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10 offset-1">
+        <h1>One More Step To Feshly Preped Raw Meal for Your Pet!</h1>
+        <h4>Please fill in your shipping address below to receive your shipping price estimation</h4>
+    
+      </div>
+
+    </div>
+    
+    
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/checkout.js"></script> 
+  <script type="text/javascript" src="js/members.js"></script>
 
 </body>
 
