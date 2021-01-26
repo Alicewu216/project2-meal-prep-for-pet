@@ -1,4 +1,5 @@
 $font-stack: Helvetica, sans-serif;
+$primary-color: rgb(32, 32, 32);
 $item-group-margin: 5px;
 $item-group-padding: 10px;
 
@@ -20,9 +21,9 @@ form.login {
   background-size: 100% auto;
   padding-top: 260px;
 }
-
 #title-text {
   background: whitesmoke;
+  
 }
 
 .item-group-container {
@@ -46,3 +47,4 @@ form.login {
 #other-supplements {
   background: rgb(247, 247, 209);
 }
+

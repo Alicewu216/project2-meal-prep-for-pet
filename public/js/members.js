@@ -1,6 +1,7 @@
 $(document).ready(function () {
   //Getting a reference to the input field where user adds a new item to cart
   var $itemContainer = $("#user-cart");
+  
   //arrary of items
   var itemName = [
     "Australia Beef Steak",
@@ -56,7 +57,7 @@ $(document).ready(function () {
   //inital array for cart list
   var feeds = [];
   //getting items from database
-  // getFeeds();
+  getFeeds();
   //function that resets cart list with new items from databse
   function initializeCart() {
     $itemContainer.empty();
